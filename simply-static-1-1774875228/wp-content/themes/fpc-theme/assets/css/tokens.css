@@ -1,0 +1,83 @@
+:root {
+    /* Colors — Dark Premium */
+    --color-bg-deep: #0B0514;
+    --color-bg-primary: #1A0A2E;
+    --color-bg-card: rgba(30, 15, 55, 0.6);
+    --color-bg-glass: rgba(139, 92, 246, 0.08);
+    --color-bg-glass-hover: rgba(139, 92, 246, 0.15);
+    --color-surface: #1E0F37;
+    --color-border: rgba(139, 92, 246, 0.2);
+    --color-border-glow: rgba(139, 92, 246, 0.4);
+
+    --color-primary: #8B5CF6;
+    --color-primary-light: #A78BFA;
+    --color-primary-dark: #6D28D9;
+    --color-accent: #EC4899;
+    --color-accent-light: #F472B6;
+    --color-success: #10B981;
+    --color-warning: #F59E0B;
+
+    --color-text: #F1E8FF;
+    --color-text-secondary: #B8A4D6;
+    --color-text-muted: #B8A5D4;
+    --color-white: #FFFFFF;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, #0B0514 0%, #1A0A2E 30%, #2D1054 60%, #1A0A2E 100%);
+    --gradient-accent: linear-gradient(135deg, #8B5CF6, #EC4899);
+    --gradient-card: linear-gradient(135deg, rgba(139,92,246,0.1), rgba(236,72,153,0.05));
+    --gradient-btn: linear-gradient(135deg, #8B5CF6 0%, #7C3AED 50%, #EC4899 100%);
+    --gradient-btn-hover: linear-gradient(135deg, #A78BFA 0%, #8B5CF6 50%, #F472B6 100%);
+    --gradient-glow: radial-gradient(ellipse at center, rgba(139,92,246,0.15) 0%, transparent 70%);
+
+    /* Typography */
+    --font-heading: 'Space Grotesk', system-ui, sans-serif;
+    --font-body: 'Inter', system-ui, sans-serif;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+
+    /* Font Sizes — fluid clamp */
+    --fs-hero: clamp(2.5rem, 5vw, 4rem);
+    --fs-h1: clamp(2rem, 4vw, 3rem);
+    --fs-h2: clamp(1.75rem, 3.5vw, 2.5rem);
+    --fs-h3: clamp(1.25rem, 2vw, 1.5rem);
+    --fs-body: 1rem;
+    --fs-body-lg: 1.125rem;
+    --fs-small: 0.875rem;
+    --fs-xs: 0.75rem;
+    --lh-tight: 1.2;
+    --lh-normal: 1.6;
+
+    /* Spacing */
+    --space-xs: 0.25rem;
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    --space-xl: 2rem;
+    --space-2xl: 3rem;
+    --space-3xl: 4rem;
+    --space-4xl: 6rem;
+    --section-py: clamp(4rem, 8vw, 7rem);
+
+    /* Layout */
+    --container-max: 1200px;
+    --container-narrow: 800px;
+    --container-px: clamp(1rem, 3vw, 2rem);
+
+    /* Effects */
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+    --radius-xl: 24px;
+    --radius-full: 9999px;
+    --shadow-sm: 0 2px 8px rgba(0,0,0,0.3);
+    --shadow-md: 0 4px 20px rgba(0,0,0,0.4);
+    --shadow-lg: 0 8px 40px rgba(0,0,0,0.5);
+    --shadow-glow: 0 0 30px rgba(139,92,246,0.3);
+    --shadow-glow-accent: 0 0 30px rgba(236,72,153,0.3);
+    --backdrop-blur: blur(20px);
+    --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
