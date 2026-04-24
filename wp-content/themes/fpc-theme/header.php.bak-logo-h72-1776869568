@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html <?php language_attributes(); ?>>
+<head>
+    <meta charset="<?php bloginfo( 'charset' ); ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <?php wp_head(); ?>
+</head>
+<body <?php body_class(); ?>>
+<?php wp_body_open(); ?>
+
+<!-- Promo Banner -->
+<div class="promo-banner" style="background:var(--gradient-btn);text-align:center;padding:10px;font-size:var(--fs-small);color:#fff;font-weight:600;position:relative;z-index:1001;">
+    ✨ 3 Free Minutes With Every Psychic — No Credit Card Required
+    <a href="<?php echo esc_url( home_url( '/start-chat/' ) ); ?>" style="color:#fff;text-decoration:underline;margin-left:12px;font-weight:700;">Start Now →</a>
+</div>
+
+<header class="site-header" id="site-header">
+    <div class="container">
+        <div class="header-inner">
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="site-logo"><?php $__logo_id = has_custom_logo() ? get_theme_mod('custom_logo') : 0; $__logo_src = $__logo_id ? wp_get_attachment_image_src($__logo_id, 'full') : null; if ($__logo_src) : ?><img src="<?php echo esc_url($__logo_src[0]); ?>" alt="<?php echo esc_attr(get_bloginfo('name')); ?>" class="custom-logo" style="max-height:48px;width:auto;"><?php else : ?>
+                <span class="logo-icon">💬</span>
+                <?php echo esc_html( get_bloginfo( 'name' ) ); ?>
+            <?php endif; ?></a>
+
+            <?php
+            if ( has_nav_menu( 'primary' ) ) {
+                wp_nav_menu( [
+                    'theme_location' => 'primary',
+                    'container'      => 'nav',
+                    'container_class'=> 'main-nav',
+                    'container_id'   => 'main-nav',
+                    'items_wrap'     => '%3$s',
+                    'depth'          => 1,
+                ] );
+            } else {
+                fpc_fallback_menu();
+            }
+            ?>
+
+            <div class="header-cta">
+                <a href="<?php echo esc_url( home_url( '/start-chat/' ) ); ?>" class="btn btn-primary btn-sm">Start Free Chat</a>
+            </div>
+
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<main id="main-content">
